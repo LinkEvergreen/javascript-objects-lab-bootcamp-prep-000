@@ -5,7 +5,14 @@ function updateObjectWithKeyAndValue(object, key, value){
   return obj
 }
 
-function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
-  const object = {key: value}
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+  obj[key] = value
+
   return obj
 }
+
+const object = { key: 'value'}
+
+destructivelyUpdateObjectWithKeyAndValue(ojbect, 'key', 'value')
+
+return obj
